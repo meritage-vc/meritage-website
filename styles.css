@@ -2,16 +2,26 @@
    Meritage Website - Design System v2
    Colors: Navy #172031, Off-White #F3F1EF, Amber #F5961E
    Fonts: Instrument Serif (headings), DM Sans (body)
-   Clone of meritage.vc
+   Design tokens from meritage.vc Webflow export
    ============================================= */
+
+:root {
+  --dark: #172031;
+  --dark-hover: #3d434e;
+  --orange: #f5961e;
+  --hover-orange: #ff9e24;
+  --background: #f3f1ef;
+  --white: #fff;
+  --border: #ece8e4;
+}
 
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
   font-family: 'DM Sans', sans-serif;
-  color: #172031;
-  background: #F3F1EF;
+  color: var(--dark);
+  background: var(--background);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,18 +36,18 @@ ul { list-style: none; }
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #F5961E;
+  color: var(--orange);
   margin-bottom: 16px;
 }
 .section-title {
   font-family: 'Instrument Serif', serif;
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1.15;
-  color: #172031;
+  color: var(--dark);
   margin-bottom: 32px;
 }
-.section-title-white { color: #F3F1EF; }
-.text-amber { color: #F5961E; }
+.section-title-white { color: var(--background); }
+.text-amber { color: var(--orange); }
 
 /* Buttons */
 .btn {

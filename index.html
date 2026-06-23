@@ -46,8 +46,10 @@
   </div>
 
   <!-- ========== HERO ========== -->
-  <section class="hero" style="background-image:url('https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f773a0d8f97b1286190_morningflatirons.webp');background-size:cover;background-position:center;position:relative;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(23,32,49,0.92) 0%, rgba(23,32,49,0.8) 50%, rgba(23,32,49,0.85) 100%);"></div>
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f773a0d8f97b1286190_morningflatirons.webp" alt="">
+    </div>
     <div class="container">
       <div class="hero-content">
         <h1>All businesses face challenges. <em>Execution decides who wins.</em></h1>
@@ -146,82 +148,114 @@
               </ul>
               <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
             </div>
-            <div class="tab-testimonial">
-              <blockquote>&ldquo;Working with Bart has been one of the highest-ROI investments we&rsquo;ve made. His focus on high-growth tech and hands-on support pushed team clarity and accountability to a new level.&rdquo;</blockquote>
-              <cite>Caleb Polley</cite>
-              <span class="cite-title">CEO &amp; Founder, Cubby Beds</span>
+            <div style="display:flex;flex-direction:column;gap:24px;">
+              <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f770ed69982fcb781f6_lonetree.webp" alt="" style="width:100%;height:250px;object-fit:cover;border-radius:16px;">
+              <div class="tab-testimonial">
+                <blockquote>&ldquo;Working with Bart has been one of the highest-ROI investments we&rsquo;ve made. His focus on high-growth tech and hands-on support pushed team clarity and accountability to a new level.&rdquo;</blockquote>
+                <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+                  <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/696d4a9559679e77acbe50a2_Caleb%20Polley.jpeg" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                  <div>
+                    <cite style="font-style:normal;font-weight:600;display:block;">Caleb Polley</cite>
+                    <span class="cite-title">CEO &amp; Founder, Cubby Beds</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="tab-panel" role="tabpanel" data-panel="1">
-          <div class="tab-panel-grid">
-            <div class="tab-panel-left">
-              <span class="brings-label">ENTREPRENEURS SEEKING EXIT</span>
-              <h4>Maximize Value For Your Exit</h4>
-              <p>For entrepreneurs preparing for an acquisition, search fund, or other exit event, we bring the operational rigor that makes businesses more valuable. We help you clean up the messy middle, get your data room ready, and demonstrate the repeatable, scalable processes that acquirers pay a premium for.</p>
-              <span class="brings-label">What Meritage Brings</span>
-              <ul class="brings-list">
-                <li class="brings-item"><span class="check">&#10003;</span> Exit-ready process documentation and data room prep</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Integration of EOS for post-acquisition scalability</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Experienced M&amp;A and transaction support</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Capital strategy and investor introductions</li>
-              </ul>
-              <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
-            </div>
-            <div class="tab-testimonial">
-              <blockquote>&ldquo;I can&rsquo;t recommend Alex Hodgkin highly enough for any ETA operator looking to start the EOS journey.&rdquo;</blockquote>
-              <cite>Andrew Hitchings</cite>
-              <span class="cite-title">Owner, Colorado Homes Services</span>
-            </div>
-          </div>
-        </div>
+                  <div class="tab-panel-grid">
+                    <div class="tab-panel-left">
+                      <span class="brings-label">ENTREPRENEURS SEEKING EXIT</span>
+                      <h4>Maximize Value For Your Exit</h4>
+                      <p>For entrepreneurs preparing for an acquisition, search fund, or other exit event, we bring the operational rigor that makes businesses more valuable. We help you clean up the messy middle, get your data room ready, and demonstrate the repeatable, scalable processes that acquirers pay a premium for.</p>
+                      <span class="brings-label">What Meritage Brings</span>
+                      <ul class="brings-list">
+                        <li class="brings-item"><span class="check">&#10003;</span> Exit-ready process documentation and data room prep</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Integration of EOS for post-acquisition scalability</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Experienced M&amp;A and transaction support</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Capital strategy and investor introductions</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:24px;">
+                      <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f773a0d8f97b1286190_morningflatirons.webp" alt="" style="width:100%;height:250px;object-fit:cover;border-radius:16px;">
+                      <div class="tab-testimonial">
+                        <blockquote>&ldquo;I can&rsquo;t recommend Alex Hodgkin highly enough for any ETA operator looking to start the EOS journey.&rdquo;</blockquote>
+                        <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+                          <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/696e82790faf949bdca288bb_Andrew%20Hitchings%20Better.jpeg" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                          <div>
+                            <cite style="font-style:normal;font-weight:600;display:block;">Andrew Hitchings</cite>
+                            <span class="cite-title">Owner, Colorado Homes Services</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="tab-panel" role="tabpanel" data-panel="2">
-          <div class="tab-panel-grid">
-            <div class="tab-panel-left">
-              <span class="brings-label">INVESTMENT FIRMS</span>
-              <h4>Drive Value Across Your Portfolio</h4>
-              <p>We partner with VC and PE firms to bring EOS-based operational excellence to portfolio companies. Whether you&rsquo;re looking to standardize reporting, accelerate value creation plans, or install professional management in founder-led businesses, Meritage delivers the operating system that institutional investors trust.</p>
-              <span class="brings-label">What Meritage Brings</span>
-              <ul class="brings-list">
-                <li class="brings-item"><span class="check">&#10003;</span> Standardized portfolio company reporting and KPIs</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Value creation planning through EOS implementation</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Professional management installation and coaching</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Co-investment opportunities in vetted EOS-run companies</li>
-              </ul>
-              <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
-            </div>
-            <div class="tab-testimonial">
-              <blockquote>&ldquo;Jay tailored EOS to our PE/VC reality—cutting noise, sharpening value creation, and lifting firmwide adoption. One year in, we&rsquo;re driving disciplined, collaborative results across the portfolio.&rdquo;</blockquote>
-              <cite>Ryan Heckman</cite>
-              <span class="cite-title">Co-founder and Managing Partner, Rallyday Partners</span>
-            </div>
-          </div>
-        </div>
+                <div class="tab-panel" role="tabpanel" data-panel="2">
+                  <div class="tab-panel-grid">
+                    <div class="tab-panel-left">
+                      <span class="brings-label">INVESTMENT FIRMS</span>
+                      <h4>Drive Value Across Your Portfolio</h4>
+                      <p>We partner with VC and PE firms to bring EOS-based operational excellence to portfolio companies. Whether you&rsquo;re looking to standardize reporting, accelerate value creation plans, or install professional management in founder-led businesses, Meritage delivers the operating system that institutional investors trust.</p>
+                      <span class="brings-label">What Meritage Brings</span>
+                      <ul class="brings-list">
+                        <li class="brings-item"><span class="check">&#10003;</span> Standardized portfolio company reporting and KPIs</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Value creation planning through EOS implementation</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Professional management installation and coaching</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Co-investment opportunities in vetted EOS-run companies</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:24px;">
+                      <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f77c155f54cb4467ffa_fourteener.webp" alt="" style="width:100%;height:250px;object-fit:cover;border-radius:16px;">
+                      <div class="tab-testimonial">
+                        <blockquote>&ldquo;Jay tailored EOS to our PE/VC reality&mdash;cutting noise, sharpening value creation, and lifting firmwide adoption. One year in, we&rsquo;re driving disciplined, collaborative results across the portfolio.&rdquo;</blockquote>
+                        <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+                          <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/6975ad0e98f6544136e9324d_1693418193727.jpeg" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                          <div>
+                            <cite style="font-style:normal;font-weight:600;display:block;">Ryan Heckman</cite>
+                            <span class="cite-title">Co-founder and Managing Partner, Rallyday Partners</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="tab-panel" role="tabpanel" data-panel="3">
-          <div class="tab-panel-grid">
-            <div class="tab-panel-left">
-              <span class="brings-label">COMPLEX ORGANIZATIONS</span>
-              <h4>Untangle Complexity. Drive Results.</h4>
-              <p>Large, established organizations face unique challenges: legacy systems, layered management, and cultural inertia. We bring EOS to complex enterprises — including public companies — helping executive teams cut through complexity, align around a single vision, and build the traction needed to transform.</p>
-              <span class="brings-label">What Meritage Brings</span>
-              <ul class="brings-list">
-                <li class="brings-item"><span class="check">&#10003;</span> Enterprise-wide EOS deployment and leadership alignment</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Modernization strategy without disrupting operations</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Board-level reporting and governance frameworks</li>
-                <li class="brings-item"><span class="check">&#10003;</span> Cultural transformation through operating discipline</li>
-              </ul>
-              <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
-            </div>
-            <div class="tab-testimonial">
-              <blockquote>&ldquo;Jay has been with us from the beginning of our EOS journey. His knowledgeable and professional approach helped overcome the natural reticence that accompanies any major operational change.&rdquo;</blockquote>
-              <cite>Carl Koelbel</cite>
-              <span class="cite-title">CEO, Koelbel</span>
-            </div>
-          </div>
-        </div>
+                <div class="tab-panel" role="tabpanel" data-panel="3">
+                  <div class="tab-panel-grid">
+                    <div class="tab-panel-left">
+                      <span class="brings-label">COMPLEX ORGANIZATIONS</span>
+                      <h4>Untangle Complexity. Drive Results.</h4>
+                      <p>Large, established organizations face unique challenges: legacy systems, layered management, and cultural inertia. We bring EOS to complex enterprises — including public companies — helping executive teams cut through complexity, align around a single vision, and build the traction needed to transform.</p>
+                      <span class="brings-label">What Meritage Brings</span>
+                      <ul class="brings-list">
+                        <li class="brings-item"><span class="check">&#10003;</span> Enterprise-wide EOS deployment and leadership alignment</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Modernization strategy without disrupting operations</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Board-level reporting and governance frameworks</li>
+                        <li class="brings-item"><span class="check">&#10003;</span> Cultural transformation through operating discipline</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-amber" style="margin-top:24px;">Learn More</a>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:24px;">
+                      <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/693e6f770ed69982fcb781f6_lonetree.webp" alt="" style="width:100%;height:250px;object-fit:cover;border-radius:16px;">
+                      <div class="tab-testimonial">
+                        <blockquote>&ldquo;With a Well Crafted V/TO, Your Pitch Deck Writes Itself. We help complex organizations build the operating discipline needed to scale.&rdquo;</blockquote>
+                        <div style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+                          <img src="https://cdn.prod.website-files.com/6935d10e87bc5329c8ac2db8/696d50f923b40f7f09eb427e_Tiffany%20To.jpeg" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                          <div>
+                            <cite style="font-style:normal;font-weight:600;display:block;">Tiffany To</cite>
+                            <span class="cite-title">EVP/GM of Enterprise, Atlassian (Nasdaq: TEAM)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       </div>
     </div>
   </section>
@@ -557,19 +591,19 @@
             <label>I am interested in discussing...</label>
             <div class="checkbox-group">
               <label class="checkbox-label">
-                <input type="checkbox" name="interest" value="eos"> EOS Implementation
+                <input type="checkbox" name="interest" value="eos">EOS Implementation
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" name="interest" value="equity"> Equity Investment
+                <input type="checkbox" name="interest" value="equity">Equity Investment
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" name="interest" value="careers"> Working at Meritage
+                <input type="checkbox" name="interest" value="careers">Working at Meritage
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" name="interest" value="kolbe"> Kolbe Workshop
+                <input type="checkbox" name="interest" value="kolbe">Kolbe Workshop
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" name="interest" value="other"> Something Else
+                <input type="checkbox" name="interest" value="other">Something Else
               </label>
             </div>
           </div>

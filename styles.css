@@ -140,12 +140,12 @@ ul { list-style: none; }
 
 /* Mobile Overlay */
 .mobile-overlay {
-  display: none;
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(23, 32, 49, 0.98);
   z-index: 999;
   opacity: 0; pointer-events: none;
   transition: opacity 0.3s ease;
+  display: block;
 }
 .mobile-overlay.open {
   opacity: 1; pointer-events: all;
@@ -167,14 +167,27 @@ ul { list-style: none; }
   padding: 120px 0 80px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #172031 0%, #1f2c42 50%, #172031 100%);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  z-index: 0;
+}
+.hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #172031 0%, rgba(23,32,49,0.75) 50%, rgba(23,32,49,0.85) 100%);
 }
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: radial-gradient(circle at 25% 25%, rgba(245, 150, 30, 0.05) 0%, transparent 50%),
-                    radial-gradient(circle at 75% 75%, rgba(245, 150, 30, 0.03) 0%, transparent 50%);
+  background-image: radial-gradient(circle at 25% 25%, rgba(245, 150, 30, 0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 75%, rgba(245, 150, 30, 0.05) 0%, transparent 50%);
   pointer-events: none;
+  z-index: 1;
 }
 .hero .container { position: relative; z-index: 1; width: 100%; }
 .hero-content { max-width: 720px; }
@@ -269,6 +282,32 @@ ul { list-style: none; }
   transition: gap 0.2s;
 }
 .service-link:hover { gap: 10px; }
+
+/* Mega Menu Nav Styling */
+.has-mega { position: relative; }
+.mega-drop {
+  display: none;
+  position: absolute; top: 100%; left: -20px;
+  background: #fff; border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(23,32,49,0.12);
+  padding: 24px; min-width: 320px;
+  z-index: 100;
+}
+.has-mega:hover .mega-drop { display: block; }
+.mega-drop a {
+  display: block; padding: 8px 0;
+  font-size: 14px; color: #172031;
+  font-weight: 500; transition: color 0.2s;
+}
+.mega-drop a:hover { color: #F5961E; }
+.mega-drop h4 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px; margin-bottom: 4px;
+}
+.mega-drop p {
+  font-size: 13px; color: rgba(23,32,49,0.5);
+  margin-bottom: 12px;
+}
 
 /* ========== WHO WE HELP ========== */
 .who-we-help {
